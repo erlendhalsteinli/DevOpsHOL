@@ -17,7 +17,8 @@ You can accomplish these labs using Visual Studio 2017 on your local computer, b
 
 ```PowerShell
 Login-AzureRmAccount
-Select-AzureRmSubscription -SubscriptionName andrewmo
+Select-AzureRmSubscription -SubscriptionName "<YourSubsriptionName>"
+
 $VmName = "DevOpsHOL"
 $DnsLabelPrefix = "<uniquednsname>"
 $VmIPName = $VmName+"-ip"
