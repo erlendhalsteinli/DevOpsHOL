@@ -70,6 +70,12 @@ Stop-AzureRmVM -ResourceGroupName $ResourceGroupName -Name $VmName -Force
 Remove-AzureRmResourceGroup -Name $ResourceGroupName
 ```
 
+## Hands-on Labs
 
-Once you have a development environment set up, dive right in to the first [Getting Started](getting-started/README.md) lab.
+| Lab Number| Content |
+| --------- |:--------------------------:|
+| Lab 1 | [Getting Started](getting-started/README.md) and [Continuous Integration](continuous-integration/README.md) |
+| Lab 2 | TBA |
+
+
 
