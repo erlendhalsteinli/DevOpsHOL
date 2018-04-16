@@ -22,16 +22,16 @@ You can accomplish these labs using Visual Studio 2017 on your local computer, b
 Login-AzureRmAccount
 Select-AzureRmSubscription -SubscriptionName andrewmo
 $VmName = "DevOpsHOL"
-$DnsLabelPrefix = "<uniqueDNSName>"
+$DnsLabelPrefix = "<uniquednsname>"
 $VmIPName = $VmName+"-ip"
 $VmAdminUserName = "<VmAdminUserName>"
 $VmAdminPassword ="<TopSecretPassword>"
 $ResourceGroupName = "DevOpsHOL"
-$ResourceGroupLocation = "East US 2"
+$ResourceGroupLocation = "West Europe"
 $SecureStringPwd = ConvertTo-SecureString $VmAdminPassword -AsPlainText -Force
 New-AzureRmResourceGroup -Name $ResourceGroupName -Location $ResourceGroupLocation -Verbose -Force
 New-AzureRmResourceGroupDeployment -ResourceGroupName $ResourceGroupName `
-    -TemplateUri "https://raw.githubusercontent.com/nagroma/DevOpsHOL/master/azure-rm/azuredeploy.json" `
+    -TemplateUri "https://raw.githubusercontent.com/erlendhalsteinli/DevOpsHOL/master/azure-rm/azuredeploy.json" `
     -VmName $VmName `
     -VmSize "Standard_D2s_v3" `
     -VmVisualStudioVersion "VS-2017-Comm-Latest-Win10-N" `
