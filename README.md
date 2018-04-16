@@ -3,6 +3,6 @@ If you are taking the Avanade DevOps Practitioners course, then the following ar
 [Course Pre-requisites](Pre-requisites.md)
 
 ## Avanade DevOps HOL ##
-These are the Hands On Labs (HOLs) associated with the Avanade DevOps Practitioners course.  This is based to a large part on the [PartsUnlimitedHOL](https://microsoft.github.io/PartsUnlimited/basic/GettingStarted.html) but simplified to use the Visual Studio MVC sample application.  It does not use the PartsUnlimited HOL, but we want to acknowledge that project's contribution to this project.
+These are the Hands On Labs (HOLs) associated with the Avanade DevOps Practitioners course.  This is based to a large part on the [PartsUnlimitedHOL](https://github.com/Microsoft/PartsUnlimited/blob/master/docs/GettingStarted.md) but simplified to use the Visual Studio MVC sample application.  It does not use the PartsUnlimited HOL, but we want to acknowledge that project's contribution to this project.
 [HOLs](HOLs.md)
 
