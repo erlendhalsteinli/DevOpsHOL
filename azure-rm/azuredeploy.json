@@ -84,7 +84,7 @@
       },
       "setupChocolatelyScriptLocation": {
         "type": "string",
-        "defaultValue": "https://raw.githubusercontent.com/Avanade/DevOpsHOL/master/azure-rm/scripts/",
+        "defaultValue": "https://raw.githubusercontent.com/erlendhalsteinli/DevOpsHOL/master/azure-rm/scripts/",
         "metadata": {
           "description": "Public uri location of PowerShell Chocolately setup script"
         }
