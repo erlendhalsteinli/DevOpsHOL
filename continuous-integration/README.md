@@ -8,11 +8,8 @@ get fast feedback. To do so, we are going to be setting up a Continuous Integrat
 will allow us to compile and run unit tests on our code every time a commit is
 pushed to Visual Studio Team Services.
 
-## Pre-requisites: ##
-- Complete [Getting Started](../getting-started/README.md) hands on lab.
--   An active Visual Studio Team Services account.<br>
-	 [Sign up for Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)
-
+### Pre-requisites: ###
+- Complete [Course Pre-requisites](../Pre-requisites.md) lab.
 
 ## Tasks Overview: ##
 
