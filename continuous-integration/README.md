@@ -34,12 +34,14 @@ This will take you to the project dashboard page.  Click on "Set up Build".
 
 ![](<media/CI1.png>)
 
-3. Select the **Empty process** link near the top to create a build definition.  
+3. Select the repository you created in the pre-work.
+
+4. Select the **Empty process** link near the top to create a build definition.  
 >**Note:** Normally you would just select one of the available templates that is closest to the type of solution you are 
 deploying but for this lab we want to walk through a few extra steps to allow you to become more familiar with the process.
 
 
-4. After clicking the **Empty process** link you'll need to fill out the build definition starting with the Process task and it's children.
+5. After clicking the **Empty process** link you'll need to fill out the build definition starting with the Process task and it's children.
 >- Process<br>
 	Name: **DevOpsHOL-CI**<br>
 	Agent queue: **Hosted VS2017**<br>
@@ -48,7 +50,7 @@ For more flexibility in the build (and for a more in depth learning experience),
 >- Process -> Get Sources<br>
 	From: This project<br>
 	Repository: DevOpsHOL
-5. To the right of the **Phase 1** item click on the + sign and add the following tasks:<br>
+6. To the right of the **Phase 1** item click on the + sign and add the following tasks:<br>
     For each of the tasks, the settings for that task (if different than the default) are listed below<br>
  (*Hint: use the search box to filter in order to find the tasks in the list*)
 >- NuGet Tool Installer (Use NuGet 4.3.0)
@@ -69,18 +71,18 @@ For more flexibility in the build (and for a more in depth learning experience),
 
 ![](<media/CI2.png>)
 
-6. Click on the **Variables** tab and add the following Variables:
+7. Click on the **Variables** tab and add the following Variables:
 >- **BuildConfiguration** with a value of **release**
 >- **BuildPlatform** with a value of **any cpu**
-7. Click on the **Triggers** tab and verify that the **Continuous integration (CI)** option is selected to build the solution every time a change is checked in. Also make sure the filter includes the appropriate branch (in this case **master** and **Batch Changes** checkbox is unchecked
-8. Click on the **Options** tab and change the following settings
+8. Click on the **Triggers** tab and verify that the **Continuous integration (CI)** option is selected to build the solution every time a change is checked in. Also make sure the filter includes the appropriate branch (in this case **master** and **Batch Changes** checkbox is unchecked
+9. Click on the **Options** tab and change the following settings
 >- Build number format: $(date:yyyyMMdd)$(rev:.r)
 >- Automatically link new work in this build: Enabled
-9. Choose **Save & queue** to save the build definition and manually trigger the build.
+10. Choose **Save & queue** to save the build definition and manually trigger the build.
 
 ![](<media/CI3.png>)
 
-10. Click on the **Build Number**, and you should get the build in progress. Here you can also see the commands being logged to console and the current steps that the build is on.
+11. Click on the **Build Number**, and you should get the build in progress. Here you can also see the commands being logged to console and the current steps that the build is on.
 
 ![](<media/CI4.png>)
 
