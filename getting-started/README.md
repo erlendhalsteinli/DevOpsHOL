@@ -1,16 +1,11 @@
 
 # Avanade DevOps HOL - Getting Started
-In this lab, we will be installing the required development components and verifying that the solution builds and is able to be pushed to VSTS.
-## Pre-requisites ##
-1. An active Azure subscription<br>
-	[Azure Portal](https://portal.azure.com)
-2. An active Visual Studio Team Services account.<br>
-	[Sign up for Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)
+In this lab, we will be installing the required development components, create a new ASP.NET project, verifying that the solution builds locally and push it to VSTS.
 
-## Set up your machine ##
+## Set up your machine (Not needed if you created an Azure VM as described on the Pre-requisites page)  ##
 1. Install [Visual Studio 2017](http://go.microsoft.com/fwlink/?LinkId=517106)<br>
       Select ASP.NET and web development and Azure development tools on the installer.
-2. Install [Azure Power Shell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0)
+2. Install [Azure Power Shell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps)
 
 ## Create MVC web application ##
 1. Open Visual Studio 2017
