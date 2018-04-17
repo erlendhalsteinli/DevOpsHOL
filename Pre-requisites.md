@@ -8,7 +8,7 @@ If you are taking the Avanade DevOps Practitioners course, then the following ar
 	- On the Subscriptions' Overview panel, choose the ->Change directory link and select the new AD instance that you just created.
 2. An active Visual Studio Team Services account.<br>
 	[Sign up for Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)
-3. Using an Azure development environment is strongly encouraged. This avoids conflicts with your existing development environment. Complete the steps listed below in the Azure Development Environment section.
+3. Creating a new Azure development environment is strongly encouraged. This avoids conflicts with your existing development environment(s). Complete the steps listed below in the Azure Development Environment section.
 4. Complete the [Getting Started](getting-started/README.md) lab.  This will make sure that your environment is correctly configured and ready to execute the remaining labs in the course.
 5.  Configure a private VSTS agent from the [Private Agent](private-agent/README.md) lab.
 
