@@ -1,10 +1,14 @@
 ## Course Pre-requisites ##
-If you are taking the Avanade DevOps Practitioners course, then the following are pre-requisites for the beginning of the course.  The pre-requisites are straightforward but a few of the tasks take some time so doing this before the class will save time during the course and allow you to get the maxium value from the class.
+If you are taking the Avanade DevOps Practitioners course, then the following are pre-requisites for the beginning of the course.  The pre-requisites are straightforward but a few of the tasks take some time so doing this before the class will save time during the course and allow you to get the maximum value from the class.
 1. Make sure your Azure subscription is enabled and you can log in and create resources.<br>
-	[Azure Portal](https://portal.azure.com)
+	[Azure Portal](https://portal.azure.com)<br>
+	If you are using your Avanade email to access the Azure portal, then you will need to create a new Active Directory instance.  This is because the labs require creating an enterprise application id and individual users do not have permissions to create enterprise applications on the Avanade AD instance.
+	- In the [Azure Portal](https://portal.azure.com), *Create a Resource* of *Azure Active Directory* with a meaningful name. This is probably something you will use as a general purpose AD instance (i.e. not just for the class) so you may want to name it appropriately.
+	- Once the AD instance is created, click on the *All services* menu item and search for *Subscriptions*.  Choose the subscription tht is tied to your MSDN account (this is the one you will use for the class).  If you don't see the correct subscripiton, you might need to switch directories.
+	- On the Subscriptions' Overview panel, choose the ->Change directory link and select the new AD instance that you just created.
 2. An active Visual Studio Team Services account.<br>
 	[Sign up for Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)
-3. Using an Azure development environment is strongly encouraged.  Complete the steps listed below in the Azure Development Environment section.
+3. Using an Azure development environment is strongly encouraged. This avoids conflicts with your existing development environment. Complete the steps listed below in the Azure Development Environment section.
 4. Complete the [Getting Started](getting-started/README.md) lab.  This will make sure that your environment is correctly configured and ready to execute the remaining labs in the course.
 5.  Configure a private VSTS agent from the [Private Agent](private-agent/README.md) lab.
 
