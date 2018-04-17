@@ -4,7 +4,7 @@ If you are taking the Avanade DevOps Practitioners course, then the following ar
 	[Azure Portal](https://portal.azure.com)
 2. An active Visual Studio Team Services account.<br>
 	[Sign up for Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)
-3. Using an Azure development environment is strongly encouraged.  Complete the steps listed below in the Azure Development Environment.
+3. Using an Azure development environment is strongly encouraged.  Complete the steps listed below in the Azure Development Environment section.
 4. Complete the [Getting Started](getting-started/README.md) lab.  This will make sure that your environment is correctly configured and ready to execute the remaining labs in the course.
 5.  Configure a private VSTS agent from the [Private Agent](private-agent/README.md) lab.
 
