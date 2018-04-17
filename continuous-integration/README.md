@@ -9,7 +9,7 @@ will allow us to compile and run unit tests on our code every time a commit is
 pushed to Visual Studio Team Services.
 
 ### Pre-requisites: ###
-- Complete [Course Pre-requisites](../Pre-requisites.md) lab.
+- Complete [Getting-started](../getting-started/README.md) lab.
 
 ## Tasks Overview: ##
 
