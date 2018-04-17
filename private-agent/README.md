@@ -26,7 +26,7 @@ Otherwise, you can click on the Settings (gear) icon and choose **Agent Queues**
    >+ Enter run agent as service? (Y/N) (press enter for N) > Y
    >+ Enter User account to use for the service (press enter for NT AUTHORITY\NETWORK SERVICE) > *admin account on target computer*
    >+ Enter Password for the account > *admin account password*
-   6. Navigate to VSTS -> 
+   6. Rerfesh the "Agent Queues" page in VSTS, make sure that the agent is registered, enabled and online.
    
 
    
