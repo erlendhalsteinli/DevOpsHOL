@@ -13,7 +13,9 @@ If you are taking the Avanade DevOps Practitioners course, then the following ar
 5.  Configure a private VSTS agent from the [Private Agent](private-agent/README.md) lab.
 
 ## Azure Development Environment ##
-You can accomplish these labs using Visual Studio 2017 on your local computer, but you may want to consider doing the labs using an Azure VM as the development machine.  This not only keeps you from having to make changes to your local environment, but it gives you additional experience using Azure.  You can either configure an Azure development environment on your own or an easy way to do this is to use PowerShell ISE and execute the following commands.  This will create a new Azure resource group and then configure an Azure VM with Windows 10 and Visual Studio 2017 Community edition.  It will also use Chocolatey to install a collection of other tools and applications.  **Review and modify the script to suit your own needs before executing such as changing to VS Enterprise and Window Server 2016 (VS-2017-Ent-Latest-WS2016)**
+You can accomplish these labs using Visual Studio 2017 on your local computer, but you may want to consider doing the labs using an Azure VM as the development machine.  This not only keeps you from having to make changes to your local environment, but it gives you additional experience using Azure.  You can either configure an Azure development environment on your own or an easy way to do this is to use PowerShell ISE and execute the following commands.  This will create a new Azure resource group and then configure an Azure VM with Windows 10 and Visual Studio 2017 Community edition.  It will also use Chocolatey to install a collection of other tools and applications.  
+
+**Review and modify the script to suit your own needs before executing such as changing to VS Enterprise and Window Server 2016 (VS-2017-Ent-Latest-WS2016)**
 
 >**Note:** Sometimes this all works great but other times, the Chocolatey packages do not install when the VM is first created so you may need to run choco install for the individual packages to complete the environment setup.
 
