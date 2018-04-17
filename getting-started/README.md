@@ -103,4 +103,4 @@ In this lab, we will be installing the required development components, create a
 
 ## Next steps
 
-- [Continuous Integration](../continuous-integration/README.md)
+- [Private Agent Setup](../private-agent/README.md)
