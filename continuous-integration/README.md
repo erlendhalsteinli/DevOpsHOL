@@ -105,6 +105,10 @@ We will now test the **Continuous Integration build (CI)** build we created by c
 
 ![](<media/CI8.png>)
 
+## Stretch goals ##
+----------
+Create [YAML-based build] (https://docs.microsoft.com/en-us/vsts/build-release/actions/build-yaml?view=vsts)
+
 ## Next steps ##
 ----------
 
