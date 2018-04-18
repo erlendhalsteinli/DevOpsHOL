@@ -22,7 +22,7 @@ Otherwise, you can click on the Settings (gear) icon and choose **Agent Queues**
    >+ Enter personal access token > *use the access token saved earlier*
    >+ Enter agent pool (press enter for default) > *enter*
    >+ Enter agent name > DevOpsBuildDeploy *(or use the default which is the computer name)*
-   >+ Enter work folder (press enter for _work) >
+   >+ Enter work folder (press enter for _work) > *enter*
    >+ Enter run agent as service? (Y/N) (press enter for N) > Y
    >+ Enter User account to use for the service (press enter for NT AUTHORITY\NETWORK SERVICE) > *admin-account-on-target-computer*
    >+ Enter Password for the account > *admin-account-password*
