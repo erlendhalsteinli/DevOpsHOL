@@ -106,10 +106,6 @@ We will now test the **Continuous Integration build (CI)** build we created by c
 
 ![](<media/CI8.png>)
 
-## Stretch goals ##
-----------
-A. Create [YAML-based build](https://docs.microsoft.com/en-us/vsts/build-release/actions/build-yaml?view=vsts)
-
 ## Next steps ##
 ----------
 
@@ -118,7 +114,10 @@ Integration build that runs when new commits are pushed to the master branch.
 This allows you to get feedback as to whether your changes made breaking syntax
 changes, or if they broke one or more automated tests, or if your changes are a okay.
 
-Next do the [Continuous Deployment](../continuous-deployment/README.md) lab
+1. Explore other options.  Here are some additional tasks that you may want to try to expand your knowledge further.
+>+ Create [YAML-based build](https://docs.microsoft.com/en-us/vsts/build-release/actions/build-yaml?view=vsts)
+
+2. Next do the [Continuous Deployment](../continuous-deployment/README.md) lab
 
 ## Shortcut ##
 1. Download the [DevOpsHOL-CI.json](../source/build/DevOpsHOL-CI.json) file locally
