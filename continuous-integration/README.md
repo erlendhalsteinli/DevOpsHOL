@@ -67,6 +67,7 @@ For more flexibility in the build (and for a more in depth learning experience),
 	Artifact publish location: Visual Studio Team Services/TFS<br>
 
 ![](<media/CI2.png>)
+(You dont need the "Publish test result" task for this build)
 
 7. Click on the **Variables** tab and add the following Variables:
 >- **BuildConfiguration** with a value of **release**
