@@ -115,7 +115,7 @@ This allows you to get feedback as to whether your changes made breaking syntax
 changes, or if they broke one or more automated tests, or if your changes are a okay.
 
 1. Explore other options.  Here are some additional tasks that you may want to try to expand your knowledge further.
->+ Create [YAML-based build](https://docs.microsoft.com/en-us/vsts/build-release/actions/build-yaml?view=vsts)
+>+ Create a [YAML-based build](https://docs.microsoft.com/en-us/vsts/build-release/actions/build-yaml?view=vsts)
 
 2. Next do the [Continuous Deployment](../continuous-deployment/README.md) lab
 
