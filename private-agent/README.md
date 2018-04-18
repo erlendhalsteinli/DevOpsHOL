@@ -18,9 +18,9 @@ Otherwise, you can click on the Settings (gear) icon and choose **Agent Queues**
    5. Return to the previous Agent Queue browser tab.  Click on **Download agent**.  
    Once the Agent zip file is downloaded, follow the instructions on the agent download page to unzip and configure the agent on the target machine using the configuration options below.
    >+ Enter server URL > https://*\<youralias>*.visualstudio.com
-   >+ Enter authentication type (press enter for PAT) >
+   >+ Enter authentication type (press enter for PAT) > *enter*
    >+ Enter personal access token > *use the access token saved earlier*
-   >+ Enter agent pool (press enter for default) >
+   >+ Enter agent pool (press enter for default) > *enter*
    >+ Enter agent name > DevOpsBuildDeploy *(or use the default which is the computer name)*
    >+ Enter work folder (press enter for _work) >
    >+ Enter run agent as service? (Y/N) (press enter for N) > Y
