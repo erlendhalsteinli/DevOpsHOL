@@ -97,7 +97,7 @@ workerSize "0"
 9. Click **Variables** link and add the following variables and values.
 	* **AppServicePlan**: DevOpsHOL *(or any name you would like)*
 	* **ResourceGroupName**: DevOpsHOL *(or any name you would like)*
-	* **SiteLocation**: *Choose a valid Azure location such as "centralus"*
+	* **SiteLocation**: *Choose a valid Azure location such as "westeurope"*
 	* **WebsiteName**: *Unique name of the website in Azure*
 
 		> **Note**: Use a unique value for your WebsiteName by adding something custom at the end like your initials. Example for WebsiteName : devopshol-am 
