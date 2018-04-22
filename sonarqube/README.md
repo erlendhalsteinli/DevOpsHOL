@@ -15,7 +15,7 @@ Based on [this](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube
 
 1. For the class, the instructor will provide you with a project name and token.  If doing this lab with your own server, create a new project and save away the token for use in the next steps.
 
-1. Edit your build definition and add task "Prepare analysis on SonarQube" before any Msbuild or VSBuild task.
+1. Edit your build definition and add task "Prepare Analysis Configuration/Prepare analysis on SonarQube" before any Msbuild or VSBuild task.
     - Install SonarQube extension from marketplace if the task is not yet available on your VSTS account
     - Add a new SonarQube service endpoint if you don't have one yet (Use the saved Token or token provided by the instructor)
     - Enter the saved Project Key and make up a name for your Project
@@ -26,9 +26,9 @@ Based on [this](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube
 1. Add task "Run Code Analysis" and "Publish Quality Gate Result" to your build.
 
 1. Reorder the tasks to respect the following order:
-   - Prepare Analysis task before any MSBuild or Visual Studio Build task
-   - Run Code Analysis task after the Visual Studio Test task
-   - Publish Quality Gate Result task after the Run Code Analysis task
+   - "Prepare Analysis" task before any MSBuild or Visual Studio Build task
+   - "Run Code Analysis" task after the Visual Studio Test task
+   - "Publish Quality Gate Result" task after the Run Code Analysis task
 
 1. Save the build, do not queue it.
 
