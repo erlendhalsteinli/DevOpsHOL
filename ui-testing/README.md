@@ -15,13 +15,13 @@ Based on the following tutorials:
 
 ## Tasks for local UI Testing
 
-1. Add a new Unit Test Project "**Tests**" (.NET Framework 4.7.1) and add the following NuGet packages:
+1. Add a new Unit Test Project "**DevOpsHOL.UITests**" (.NET Framework 4.6.1) and add the following NuGet packages:
    - Selenium.Support (Includes Selenium.WebDriver)
    - Selenium.WebDriver.PhantomJS
    - (optional)Selenium.Chrome.WebDriver
    - (optional)Selenium.WebDriver.IEDriver
 
-1. Add new file local.runsettings to the **Tests** project.
+1. Add new file local.runsettings to the **DevOpsHOL.UITests** project (add blank xml file), and configure Visual Studio to [use the local.runsettings](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) file.
     <details><summary>Click here to view the contents</summary>
 
     ```xml
@@ -34,7 +34,7 @@ Based on the following tutorials:
     ```
     </details>
 
-1. Add folder PageObjects and add classes for all the pages to the **Tests** project.
+1. Add folder PageObjects and add classes for all the pages to the **DevOpsHOL.UITests** project.
    - <details><summary>Code for BasePage</summary>
 
         ```csharp
@@ -100,6 +100,7 @@ Based on the following tutorials:
 
         ```csharp
         using OpenQA.Selenium;
+        using OpenQA.Selenium.Support.PageObjects;
         
         class AboutPage : BasePage
         {
@@ -122,6 +123,7 @@ Based on the following tutorials:
 
         ```csharp
         using OpenQA.Selenium;
+        using OpenQA.Selenium.Support.PageObjects;
         
         class ContactPage : BasePage
         {
@@ -141,7 +143,7 @@ Based on the following tutorials:
    </details>
 
 
-1. Add new class UITests to the **Tests** project.
+1. Add new class UITests to the **DevOpsHOL.UITests** project.
     <details><summary>Click here to view the code</summary>
 
     ```csharp
@@ -235,13 +237,11 @@ Based on the following tutorials:
     ```
     </details>
 
-1. Configure Visual Studio to [use the local.runsettings](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) file
-
 1. Run all unit tests and make sure that all succeed
 
 ## Tasks for UI Testing in the QA environment
 
-1. Add new file vsts.runsettings to the **Tests** project, with "Copy to Output directory" set to "Copy always". Notice the different value of the parameter. This is a token that will be replaced by an actual Url during the Release in VSTS.
+1. Add new file vsts.runsettings to the **DevOpsHOL.UITests** project (add blank xml file), with "Copy to Output directory" set to "Copy always". Notice the different value of the parameter. This is a token that will be replaced by an actual Url during the Release in VSTS.
     <details><summary>Click here to view the contents</summary>
 
     ```xml
@@ -255,11 +255,11 @@ Based on the following tutorials:
     </details>
 
 1. Edit your Build Definition (save, do not queue)
-    1. Add task "NuGet restore" after the "Restore" task:
-        - Set the path to your Test project's packages.config (Tests/Tests.csproj)
+    1. Add task another "NuGet restore" after the existing "Nuget restore" task:
+        - Set the path to your DevOpsHOL.UITests project's packages.config (DevOpsHOL.UITests/DevOpsHOL.UITests.csproj)
         - Under Advanced, set the destination to: ../packages
     1. Change the Test task by adding the following argument: --filter TestCategory!=UI
-    1. Add task "Publish build artifact" after the other Publish task, with the following settings:
+    1. Add task another "Publish artifact" task after the existing publish task, with the following settings:
         - Path to publish: \<yourtestprojectfolder\>/bin
         - Artifact name: tests
         - Artifact publish location: VSTS

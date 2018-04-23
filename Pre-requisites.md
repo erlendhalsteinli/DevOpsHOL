@@ -1,5 +1,5 @@
 ## Course Pre-requisites ##
-If you are taking the Avanade DevOps Practitioners course, then the following are pre-requisites for the beginning of the course.  The pre-requisites are straightforward but a few of the tasks take some time so doing this before the class will save time during the course and allow you to get the maximum value from the class.
+If you are taking the Avanade DevOps Practitioners course, then the following are pre-requisites for the beginning of the course.  The pre-requisites are straightforward but a few of the tasks take some time, so doing this before the class will save time during the course and allow you to get the maximum value from the class.
 1. Make sure your Azure subscription is enabled and you can log in and create resources.<br>
 	[Azure Portal](https://portal.azure.com)<br>
 	If you are using your Avanade email to access the Azure portal, then you will need to create a new Active Directory instance.  This is because the labs require creating an enterprise application id and individual users do not have permissions to create enterprise applications on the Avanade AD instance.
@@ -15,11 +15,13 @@ If you are taking the Avanade DevOps Practitioners course, then the following ar
 ## Azure Development Environment ##
 You can accomplish these labs using Visual Studio 2017 on your local computer, but you may want to consider doing the labs using an Azure VM as the development machine.  This not only keeps you from having to make changes to your local environment, but it gives you additional experience using Azure.  You can either configure an Azure development environment on your own or an easy way to do this is to use PowerShell ISE and execute the following commands.  This will create a new Azure resource group and then configure an Azure VM with Windows 10 and Visual Studio 2017 Community edition.  It will also use Chocolatey to install a collection of other tools and applications.  
 
-**Review and modify the script to suit your own needs before executing such as changing to VS Enterprise and Window Server 2016 (VS-2017-Ent-Latest-WS2016)**
+**Review and modify the script to suit your own needs before executing such as changing to VS Enterprise and Windows Server 2016 (VS-2017-Ent-Latest-WS2016)**
 
 >**Note:** Sometimes this all works great but other times, the Chocolatey packages do not install when the VM is first created so you may need to run choco install for the individual packages to complete the environment setup.
 
 >**Note:** Run PowerShell as an administrator.
+
+>**Note:** If not already done, install the necessary PowerShell modules by following this: [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-5.7.0).
 
 ```PowerShell
 Login-AzureRmAccount

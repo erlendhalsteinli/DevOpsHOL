@@ -15,7 +15,7 @@ pushed to Visual Studio Team Services.
 
 **1. Create Continuous Integration Build:** In this step, you will create a build definition that will be triggered every time a commit is pushed to your repository in Visual Studio Team Services.
 
-**2. Test the CI Trigger in Visual Studio Team Services:** In this step, test the Continuous Integration build (CI) build we created by changing code in the Parts Unlimited project with Visual Studio Team Services.
+**2. Test the CI Trigger in Visual Studio Team Services:** In this step, test the Continuous Integration build (CI) build we created by changing code in the project with Visual Studio Team Services.
 
 
 ## I. Create Continuous Integration Build
