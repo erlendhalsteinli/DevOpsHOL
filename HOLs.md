@@ -8,4 +8,4 @@
 | Lab 4 - Static code analysis with SonarQube | [SonarQube](sonarqube/README.md) |
 | Lab 5 - Feature Toggles | [Feature Flag](feature-flag/README.md) |
 | Lab 6 - Extra 1 | [MEP Field Demo](mepfielddemo/README.md) |
-| Lab 7 | tba |
+| Lab 7 - Extra 2 | [Application Insights](applicationinsights/README.md) |
