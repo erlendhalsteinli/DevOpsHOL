@@ -6,14 +6,19 @@ Based on [this](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube
 
 ## Prerequisites
 
+- Setup SonarQube
+    - Use the Azure Marketplace VM template "SonarQube Certified by Bitnami" to set up the SonarQube environment for all the participants.
+    - Get the [admin password](https://docs.bitnami.com/azure/faq/#administrator-password) from the log details.
+    - Open the VM IP in a browser, and log in with the admin username and password. Create a new access token for use in VSTS: User -> Security -> Generate.
+
 - Complete [Continuous Deployment with Visual Studio Release Management](../continuous-deployment/README.md) lab with a private agent.
 - Your VSTS Agent Machine needs Java 8 installed, because the VSTS SonarQube Extension has that [requirement](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS).
 - SonarQube server installed and configured.  For the purposes of the Avanade DevOps class, the address and login for the SonarQube server to be used will be supplied by the instructor.  If you are doing this lab on your own, use the Azure portal to create a SonarQube server using the "SonarQube Certified by Bitnami" template from the marketplace.
 - Install the [SonarQube extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube) into your VSTS environment.
+- Add a SonarQube service endpoint in VSTS.
+
 
 ## Tasks
-
-1. For the class, the instructor will provide you with a project name and token.  If doing this lab with your own server, create a new project and save away the token for use in the next steps.
 
 1. Edit your build definition and add task "Prepare Analysis Configuration/Prepare analysis on SonarQube" before any Msbuild or VSBuild task.
     - Install SonarQube extension from marketplace if the task is not yet available on your VSTS account
